@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* header */
+.nav-item {
+  margin: 0 5px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: #000 !important;
+  font-weight: 500;
+  transition: all 0.1s ease-in;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.account_details div {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.account_details div span {
+  font-size: 13px;
+  color: #000 !important;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+
+/* main */
+main {
+  background-color: #FAE8DC;
+}
+
+.categories_container {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+.item {
+  width: 200px;
+  cursor: pointer;
+}
+
+.item img {
+  transition: all 0.3s ease-in;
+  width: 100%;
+}
+
+.item img:hover {
+  transform: scale(1.02);
+}
+
+/* sale */
+.sale img {
+  margin: auto;
+  width: 100%;
+}
+
+/* Spotlight Brands */
+.spotlight_categories_container {
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+
+/* seasonal categories */
+.seasonal_categories .categories_container {
+  background-color: #fff;
+  padding: 15px 0;
+}
+
+.seasonal_categories .item img {
+  width: 200px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.seasonal_categories .item img:hover {
+  transform: scale(1.02);
+}
+
+/* disclaimer */
+.disclaimer {
+  background-color: #213545;
+  padding: 5px 0;
+  border: 3px solid #A8A786;
+}
+
+.disclaimer h3,
+.disclaimer h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.disclaimer h3 {
+  color: #A8A786;
+}
+
+.disclaimer h4 {
+  color: #fff;
+}
+
+/* facilities */
+.facilities {
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.facility {
+  flex-direction: column;
+  align-items: center;
+}
+
+.facility img {
+  width: 70px;
+}
+
+.facility h5 {
+  font-size: 17px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* footer */
+footer {
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 15px 0;
+  background-color: #2C4152;
+  color: #fff;
+}
+
+
+footer h4 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 100;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* media query */
+@media screen and (max-width:1024px) {
+  .disclaimer h4 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .disclaimer h4 {
+    font-size: 14px;
+  }
+
+  .facility img {
+    width: 60px;
+  }
+
+  .facility h5 {
+    font-size: 15px;
+  }
+}
+
+/* media query for mobile devices */
+
+@media screen and (max-width:600px) {
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .account_details div span {
+    font-size: 11px;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 1rem;
+  }
+
+  h2 {
+    font-size: 17px;
+  }
+
+  .item {
+    width: 175px;
+  }
+
+  .sale {
+    margin-top: 2rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .disclaimer h5 {
+    font-size: 10px;
+  }
+
+  .disclaimer h4 {
+    font-size: 8px;
+  }
+
+  .facility img {
+    width: 50px;
+  }
+
+  .facility h5 {
+    font-size: 10px;
+  }
+
+  footer {
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 15px;
+  }
+
+  footer h4 {
+    font-size: 12px;
+  }
+
+  footer a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .item {
+    width: 150px;
+  }
+
+  .disclaimer h5 {
+    font-size: 11px;
+  }
+
+  .disclaimer h4 {
+    font-size: 8px;
+  }
+
+  .facility img {
+    width: 40px;
+  }
+
+  .facility h5 {
+    font-size: 9px;
+  }
+
+  footer {
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  footer h4 {
+    font-size: 20px;
+  }
+
+  footer a {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .navbar-brand img {
+    width: 70px !important;
+  }
+
+  .item {
+    width: 130px;
+  }
+
+  footer h4 {
+    font-size: 18px;
+  }
+
+  footer a {
+    font-size: 9px;
+  }
+}
